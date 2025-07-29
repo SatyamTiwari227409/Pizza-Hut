@@ -1,0 +1,307 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Hut - Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">🍕 Pizza Hut</div>
+      <nav class="nav" id="nav">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Deals</a>
+        <a href="#">Locations</a>
+        <a href="#" class="btn-cta">Order Now</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!-- Add this below the header in your index.html -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hot. Fresh. Delivered.</h1>
+    <p>Get your favorite pizza in minutes.</p>
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Order Now</a>
+      <a href="#" class="btn-secondary">View Menu</a>
+    </div>
+  </div>
+</section>
+
+
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+<!--Featured section-->
+  <section class="featured-section dark-theme">
+  <h2 class="section-title">🍕 Featured Menu Items</h2>
+  <div class="menu-grid">
+    <!-- Featured Item 1 -->
+    <div class="menu-item">
+      <img src="images/pizza-2530169_1280.jpg" alt="Pepperoni Pizza">
+      <h3>Pepperoni Pizza</h3>
+      <p>Spicy pepperoni, mozzarella, and our signature crust.</p>
+      <button>Order Now</button>
+    </div>
+
+    <!-- Featured Item 2 -->
+    <div class="menu-item">
+      <img src="images/pizza-2763172_1280.jpg" alt="Garlic Bread">
+      <h3>Garlic Bread</h3>
+      <p>Golden-baked, buttery garlic breadsticks.</p>
+      <button>Order Now</button>
+    </div>
+
+    <!-- Featured Item 3 -->
+    <div class="menu-item">
+      <img src="images/pizza-5275191_1280.jpg" alt="Lava Cake">
+      <h3>Chocolate Lava Cake</h3>
+      <p>Warm cake with a gooey chocolate center.</p>
+      <button>Order Now</button>
+    </div>
+
+    <!-- Featured Item 4 -->
+    <div class="menu-item">
+      <img src="images/session-2287673_1280.jpg" alt="Soft Drinks">
+      <h3>Cold Beverages</h3>
+      <p>Refreshing drinks to pair with your meal.</p>
+      <button>Order Now</button>
+    </div>
+  </div>
+</section>
+
+<!--Menu Preview Section-->
+<section class="menu-preview-section">
+  <h2 class="section-title">📋 Explore Our Menu</h2>
+  <div class="category-grid">
+    
+    <!-- Pizzas -->
+    <div class="category-card">
+      <img src="images/italian-cuisine-6903773_1280.jpg" alt="Pizza">
+      <div class="category-info">
+        <h3>Pizzas</h3>
+        <p>Signature crusts, loaded toppings, ultimate flavor.</p>
+        <a href="#" class="btn">View Pizzas</a>
+      </div>
+    </div>
+
+    <!-- Sides -->
+    <div class="category-card">
+      <img src="images/Pizza-1.jpg" alt="Sides">
+      <div class="category-info">
+        <h3>Sides</h3>
+        <p>Wings, fries, breadsticks and all the tasty extras.</p>
+        <a href="#" class="btn">View Sides</a>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="category-card">
+      <img src="images/pizza-2.jpg" alt="Desserts">
+      <div class="category-info">
+        <h3>Desserts</h3>
+        <p>Sweet treats like brownies and lava cakes.</p>
+        <a href="#" class="btn">View Desserts</a>
+      </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="category-card">
+      <img src="images/ai-3.jpg" alt="Drinks">
+      <div class="category-info">
+        <h3>Drinks</h3>
+        <p>Cold beverages to complete your meal.</p>
+        <a href="#" class="btn">View Drinks</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--Limited Time Offer Section-->
+<section class="limited-offers-section">
+  <h2 class="section-title">⏳ Limited Time Offers</h2>
+  <div class="offers-grid">
+    
+    <!-- Offer 1 -->
+    <div class="offer-card">
+      <img src="images/ai-4.jpg" alt="BOGO Pizza">
+      <div class="offer-content">
+        <h3>Buy 1 Get 1 Free</h3>
+        <p>Order any large pizza and get one absolutely free. Tuesdays only!</p>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="offer-card">
+      <img src="images/pizza-6.png" alt="Combo Meal">
+      <div class="offer-content">
+        <h3>Family Combo Deal</h3>
+        <p>2 Pizzas + 2 Sides + 1 Drink for just $24.99. Limited slots daily!</p>
+        <a href="#" class="btn">Grab Deal</a>
+      </div>
+    </div>
+
+    <!-- Offer 3 -->
+    <div class="offer-card">
+      <img src="images/pizza-7.jpg" alt="Free Dessert">
+      <div class="offer-content">
+        <h3>Free Dessert</h3>
+        <p>Get a free lava cake with every order over $20. This week only!</p>
+        <a href="#" class="btn">Claim Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--Location and delivery section-->
+<section class="location-delivery-section">
+  <h2 class="section-title">📍 Find a Pizza Hut Near You</h2>
+
+  <div class="location-search">
+    <input type="text" placeholder="Enter ZIP code or city" />
+    <button class="btn">Search</button>
+    <button class="btn secondary">Use My Location</button>
+  </div>
+
+  <div class="store-results">
+    <div class="store-card">
+      <h3>Pizza Hut - Downtown</h3>
+      <p>123 Main Street, Springfield, IL</p>
+      <p><strong>Open:</strong> 10 AM – 11 PM</p>
+      <p><strong>Services:</strong> Dine-In, Takeout, Delivery</p>
+      <a href="#" class="btn">Order Here</a>
+    </div>
+  </div>
+</section>
+
+<!--Customer review section-->
+<section class="review-section">
+  <h2 class="section-title">⭐ What Our Customers Say</h2>
+  <div class="review-grid">
+    
+    <!-- Review 1 -->
+    <div class="review-card">
+      <div class="reviewer">
+        <img src="images/shopping-8598070_1283.jpg" alt="Customer 1">
+        <div>
+          <h4>Alex J.</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p>"Absolutely love their pepperoni pizza! Always fresh and delivered hot."</p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-card">
+      <div class="reviewer">
+        <img src="images/businessman-9187791_1283.jpg" alt="Customer 2">
+        <div>
+          <h4>Samantha R.</h4>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+      <p>"Great sides and dessert options. The lava cake is to die for!"</p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review-card">
+      <div class="reviewer">
+        <img src="images/woman-8852672_1280.jpg" alt="Customer 3">
+        <div>
+          <h4>Mark W.</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p>"Fast delivery and friendly staff. Pizza Hut never disappoints."</p>
+    </div>
+
+  </div>
+</section>
+
+<!--Contact section-->
+<section class="contact-section">
+  <h2 class="section-title">📬 Get in Touch</h2>
+  <p class="section-subtitle">We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
+
+  <form class="contact-form">
+    <div class="form-group">
+      <input type="text" placeholder="Your Name" required />
+    </div>
+    <div class="form-group">
+      <input type="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="Subject" />
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<!--Footer section-->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Company Info -->
+    <div class="footer-column">
+      <h3 class="footer-logo">🍕 Pizza Hut</h3>
+      <p>Delicious pizzas, sides, and desserts delivered to your door. Order now and satisfy your cravings!</p>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Email: support@pizzahut.com</p>
+      <p>Phone: +1 800-123-4567</p>
+      <div class="social-icons">
+        <a href="#"><span>🌐</span></a>
+        <a href="#"><span>📘</span></a>
+        <a href="#"><span>🐦</span></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Pizza Hut. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
